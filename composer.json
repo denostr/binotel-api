@@ -1,0 +1,22 @@
+{
+    "name": "denostr/binotel-api",
+    "description": "Клиент для работы с API Binotel",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["binotel", "api"],
+    "authors": [
+        {
+            "name": "Denis Ostrovsky",
+            "email": "4deni.kiev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Binotel\\": "src"
+        }
+    }
+}
