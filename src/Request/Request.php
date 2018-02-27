@@ -2,6 +2,9 @@
 
 namespace Binotel\Request;
 
+use Binotel\NetworkException;
+use Binotel\Exception;
+
 class Request
 {
     public function request($url, $modified = null)
@@ -53,7 +56,7 @@ class Request
         $result = json_decode($response, true);
 
         if ($result['status'] !== 'success') {
-            throw new NetworkException('Can`t get response', $response);
+            throw new Exception('Can`t get response: ' . $response, $info['http_code']);
         }
 
         return $result;

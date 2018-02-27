@@ -4,6 +4,7 @@ namespace Binotel;
 
 use Binotel\Request\Params;
 use Binotel\Helpers\Formatter;
+use Binotel\ModelException;
 
 class Client
 {
