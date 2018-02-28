@@ -108,7 +108,9 @@ class Stats extends Models
     {
         $this->setFields($fields);
 
-        return $this->getCallDetails($this->request('stats/call-record'));
+        $record = $this->request('stats/call-record');
+
+        return $record['url'];
     }
 
     private function getCallDetails($result)
