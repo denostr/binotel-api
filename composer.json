@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Binotel\\": "src"
+            "denostr\\Binotel\\": "src"
         }
     }
 }

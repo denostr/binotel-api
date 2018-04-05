@@ -1,10 +1,10 @@
 <?php
 
-namespace Binotel\Models;
+namespace denostr\Binotel\Models;
 
-use Binotel\Models;
+use denostr\Binotel\Model;
 
-class Stats extends Models
+class Stats extends Model
 {
     public function incomingCallsForPeriod($fields = [])
     {

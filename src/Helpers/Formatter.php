@@ -1,10 +1,10 @@
 <?php
 
-namespace Binotel\Helpers;
+namespace denostr\Binotel\Helpers;
 
 class Formatter
 {
-    static public function toCamelCase($string)
+    public static function toCamelCase($string)
     {
         return str_replace(' ', '', ucwords(str_replace('_', ' ', $string)));
     }

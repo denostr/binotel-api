@@ -1,6 +1,6 @@
 <?php
 
-namespace Binotel\Request;
+namespace denostr\Binotel\Request;
 
 class Params
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Binotel;
+namespace denostr\Binotel;
 
-use Binotel\Request\Params;
-use Binotel\Helpers\Formatter;
-use Binotel\ModelException;
+use denostr\Binotel\Request\Params;
+use denostr\Binotel\ModelException;
+use denostr\Binotel\Helpers\Formatter;
 
 class Client
 {

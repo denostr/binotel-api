@@ -1,7 +1,6 @@
 <?php
 
-namespace Binotel;
-
+namespace denostr\Binotel;
 
 class Exception extends \Exception
 {

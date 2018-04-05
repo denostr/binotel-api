@@ -1,9 +1,7 @@
 <?php
 
-namespace Binotel;
-
+namespace denostr\Binotel;
 
 class ModelException extends Exception
 {
-
 }

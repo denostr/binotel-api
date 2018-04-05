@@ -1,10 +1,10 @@
 <?php
 
-namespace Binotel\Models;
+namespace denostr\Binotel\Models;
 
-use Binotel\Models;
+use denostr\Binotel\Model;
 
-class Settings extends Models
+class Settings extends Model
 {
     public function listOfEmployees($fields = [])
     {

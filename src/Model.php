@@ -1,10 +1,10 @@
 <?php
 
-namespace Binotel;
+namespace denostr\Binotel;
 
-use Binotel\Request\Request;
+use denostr\Binotel\Request\Request;
 
-abstract class Models extends Request
+abstract class Model extends Request
 {
     public $parameters;
 
@@ -15,7 +15,7 @@ abstract class Models extends Request
 
     public function setFields($fields)
     {
-        foreach ($fields AS $name => $value) {
+        foreach ($fields as $name => $value) {
             $this->parameters->addPost($name, $value);
         }
     }

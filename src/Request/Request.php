@@ -1,9 +1,9 @@
 <?php
 
-namespace Binotel\Request;
+namespace denostr\Binotel\Request;
 
-use Binotel\NetworkException;
-use Binotel\Exception;
+use denostr\Binotel\Exception;
+use denostr\Binotel\NetworkException;
 
 class Request
 {

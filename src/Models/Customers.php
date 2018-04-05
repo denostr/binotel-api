@@ -1,10 +1,10 @@
 <?php
 
-namespace Binotel\Models;
+namespace denostr\Binotel\Models;
 
-use Binotel\Models;
+use denostr\Binotel\Model;
 
-class Customers extends Models
+class Customers extends Model
 {
     public function getList($fields = [])
     {
