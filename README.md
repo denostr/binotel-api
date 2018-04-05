@@ -6,13 +6,13 @@
 Рекомендуется установка через composer:
 
 ```
-$ composer require denostr/binotel-api:"@dev"
+$ composer require denostr/binotel-api
 ```
 
 или добавить
 
 ```
-"denostr/binotel-api" : "@dev"
+"denostr/binotel-api": "~0.1"
 ```
 
 в файл `composer.json`
