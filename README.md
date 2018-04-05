@@ -21,15 +21,15 @@ $ composer require denostr/binotel-api:"@dev"
 
 ```
 try {
-	$client = new \denostr\Binotel\Client('KEY', 'SECRET');
+    $client = new \denostr\Binotel\Client('KEY', 'SECRET');
+    
+    $settings = $client->settings;
+    $voiceFiles = $settings->listOfVoiceFiles();
 
-	$settings = $client->settings;
-	$voiceFiles = $settings->listOfVoiceFiles();
-
-	print_r($voiceFiles);
+    print_r($voiceFiles);
 
 } catch (\denostr\Binotel\Exception $e) {
-	printf('Error (%d): %s' . PHP_EOL, $e->getCode(), $e->getMessage());
+    printf('Error (%d): %s' . PHP_EOL, $e->getCode(), $e->getMessage());
 }
 ```
 
