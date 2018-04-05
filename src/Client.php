@@ -29,7 +29,7 @@ class Client
 
     public function __get($name)
     {
-        $classname = '\\Binotel\\Models\\' . Formatter::toCamelCase($name);
+        $classname = 'denostr\\Binotel\\Models\\' . Formatter::toCamelCase($name);
 
         if (!class_exists($classname)) {
             throw new ModelException('Model not exists: ' . $name);
