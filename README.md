@@ -1,5 +1,10 @@
 # Клиент для Binotel API
 
+[![Latest Stable Version](https://poser.pugx.org/denostr/binotel-api/v/stable)](https://packagist.org/packages/denostr/binotel-api)
+[![Total Downloads](https://poser.pugx.org/denostr/binotel-api/downloads)](https://packagist.org/packages/denostr/binotel-api)
+[![Latest Unstable Version](https://poser.pugx.org/denostr/binotel-api/v/unstable)](https://packagist.org/packages/denostr/binotel-api)
+[![License](https://poser.pugx.org/denostr/binotel-api/license)](https://packagist.org/packages/denostr/binotel-api)
+
 
 ## Установка
 
