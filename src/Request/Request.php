@@ -5,9 +5,24 @@ namespace denostr\Binotel\Request;
 use denostr\Binotel\Exception;
 use denostr\Binotel\NetworkException;
 
+/**
+ * Класс для выполнения запросов
+ *
+ * @package denostr\Binotel\Request
+ * @author denostr <4deni.kiev@gmail.com>
+ * @link https://github.com/denostr/binotel-api
+ */
 class Request
 {
-    public function request($url, $modified = null)
+    /**
+     * Выполняем запрос
+     *
+     * @param string $url
+     * @return mixed
+     * @throws Exception
+     * @throws NetworkException
+     */
+    public function request($url)
     {
         $params = $this->parameters;
         $data = $params->getPostList();
@@ -51,6 +66,14 @@ class Request
         return $this->parseResponse($result, $info);
     }
 
+    /**
+     * Парсим ответ
+     *
+     * @param mixed $response
+     * @param mixed $info
+     * @return mixed
+     * @throws Exception
+     */
     public function parseResponse($response, $info)
     {
         $result = json_decode($response, true);
@@ -62,6 +85,12 @@ class Request
         return $result;
     }
 
+    /**
+     * Формируем подпись
+     *
+     * @param array $params
+     * @return string
+     */
     public function getSignature(array $params)
     {
         ksort($params);
