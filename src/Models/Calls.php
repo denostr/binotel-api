@@ -62,7 +62,7 @@ class Calls extends Model
      * — trunkNumber - номер через который будут совершаться оба звонка
      *
      * Дополнительные параметры:
-     * — limitCallTime  - ограничение длительности звонка в секундах
+     * — limitCallTime - ограничение длительности звонка в секундах
      * — playbackWaiting - проигрывание, первому участнику разговора, фразы:
      *      "ожидайте пожалуйста на линии, происходит соединение со 2-м участником разговора".
      *      По умолчанию стоит TRUE, принимает значения: TRUE или FALSE.
@@ -106,7 +106,7 @@ class Calls extends Model
      * @throws \denostr\Binotel\NetworkException
      *
      * Обязательные параметры:
-     * — generalCallID  - идентификатор звонка
+     * — generalCallID - идентификатор звонка
      */
     public function hangupCall($fields = [])
     {
@@ -126,8 +126,8 @@ class Calls extends Model
      * @throws \denostr\Binotel\NetworkException
      *
      * Обязательные параметры:
-     * — phone_number  - телефонный номер кому будет проигрываться оповещение
-     * - voiceFileID  - идентификатор голосового файла
+     * — phone_number - телефонный номер кому будет проигрываться оповещение
+     * - voiceFileID - идентификатор голосового файла
      */
     public function callWithAnnouncement($fields = [])
     {
@@ -148,7 +148,7 @@ class Calls extends Model
      *
      * Обязательные параметры:
      * — phone_number - телефонный номер кому будет проигрываться оповещение
-     * - ivrName  - имя голосового меню
+     * - ivrName - имя голосового меню
      */
     public function callWithInteractiveVoiceResponse($fields = [])
     {
