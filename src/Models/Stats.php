@@ -95,6 +95,9 @@ class Stats extends Model
      * @return mixed
      * @throws \denostr\Binotel\Exception
      * @throws \denostr\Binotel\NetworkException
+     *
+     * Обязательные параметры:
+     * - timestamp - время начала выбора звонков (в формате unix timestamp)
      */
     public function allOutgoingCallsSince($fields = [])
     {
