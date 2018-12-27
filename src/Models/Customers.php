@@ -185,6 +185,6 @@ class Customers extends Model
      */
     private function getCustomerData($result)
     {
-        return $result['callDetails'];
+        return $result['customerData'];
     }
 }
