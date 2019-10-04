@@ -15,6 +15,11 @@ use denostr\Binotel\NetworkException;
 class Request
 {
     /**
+     * @var
+     */
+    private $parameters;
+
+    /**
      * Выполняем запрос
      *
      * @param string $url
